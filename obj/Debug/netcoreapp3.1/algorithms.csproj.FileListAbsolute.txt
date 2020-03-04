@@ -1,0 +1,11 @@
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.exe
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.deps.json
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.runtimeconfig.json
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.runtimeconfig.dev.json
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.dll
+C:\Prog\algorithms\bin\Debug\netcoreapp3.1\algorithms.pdb
+C:\Prog\algorithms\obj\Debug\netcoreapp3.1\algorithms.csprojAssemblyReference.cache
+C:\Prog\algorithms\obj\Debug\netcoreapp3.1\algorithms.AssemblyInfoInputs.cache
+C:\Prog\algorithms\obj\Debug\netcoreapp3.1\algorithms.AssemblyInfo.cs
+C:\Prog\algorithms\obj\Debug\netcoreapp3.1\algorithms.dll
+C:\Prog\algorithms\obj\Debug\netcoreapp3.1\algorithms.pdb
