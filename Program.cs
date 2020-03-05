@@ -1,9 +1,16 @@
 ﻿using System;
 
 namespace algorithms
-{
+{     
     class Program
     {
+       
+       // Функция формирования входных данных
+       
+       // Функция поиска заданного элемента
+
+        // Функция вывода результата
+        
         static void Main(string[] args)
         {
             //Создание массива, который хранит 100 целых чисел
@@ -11,40 +18,36 @@ namespace algorithms
 
             for (int i = 0; i < myArray.Length; i++)
             {
-                myArray[i] = i+1;
+                myArray[i] = i + 1;
                 Console.Write(myArray[i]);
             }
 
-           //Искомое значение
-            int searchItem = 27;
 
-            var prevIndex = myArray.Length;
-            var nowIndex = myArray.Length / 2;
-            var newIndex = 0;
+            var item = 69;
+            var low = 0;
+            var high = myArray.Length - 1;
+            var mid = 0;
+            var guess = 0;
 
-//Поиск элемента в массиве
-            while (true)
+            while (low <= high)
             {
-                if (myArray[nowIndex] == searchItem)
+                mid = (low + high) / 2;
+                guess = myArray[mid];
+                if (guess == item)
                 {
-                    Console.WriteLine("Искомое:{0} Найденный элемент массива по индексу:{1} и значением:{2}", searchItem,nowIndex,myArray[nowIndex]);
+                    Console.WriteLine(guess);
                     break;
                 }
-                else if (searchItem < myArray[nowIndex])
+                else if (guess > item)
                 {
-                    newIndex = nowIndex - Math.Abs(prevIndex - nowIndex) / 2;
-                    prevIndex = nowIndex;
-                    nowIndex = newIndex;
+                    high = mid - 1;
                 }
-                else if (searchItem > myArray[nowIndex])
+                else if (guess < item)
                 {
-                    newIndex = nowIndex + Math.Abs(prevIndex - nowIndex) / 2;
-                    prevIndex = nowIndex;
-                    nowIndex = newIndex;
+                    low = mid + 1;
                 }
+
             }
-
-
         }
     }
 }
